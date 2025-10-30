@@ -5,11 +5,11 @@ public class Main {
         System.out.println("=== TRABAJO PRACTICO III - GRAFOS ===\n");
         
         
-        Persona p1 = new Persona("Ana", 25);
+        Persona p1 = new Persona("Blas", 82);
         Persona p2 = new Persona("Juan", 30);
-        Persona p3 = new Persona("María", 28);
-        Persona p4 = new Persona("Carlos", 35);
-        Persona p5 = new Persona("Laura", 22);
+        Persona p3 = new Persona("Tomas", 28);
+        Persona p4 = new Persona("Facundo", 35);
+        Persona p5 = new Persona("Julian", 22);
         
         
         Nodo<Persona> nodo1 = new Nodo<>(p1);
