@@ -27,7 +27,8 @@ public class Persona {
     public String toString() {
         return nombre + " (" + edad + " años)";
     }
-    
+
+
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -35,7 +36,7 @@ public class Persona {
         Persona persona = (Persona) obj;
         return edad == persona.edad && nombre.equals(persona.nombre);
     }
-    
+
     @Override
     public int hashCode() {
         return nombre.hashCode() * 31 + edad;

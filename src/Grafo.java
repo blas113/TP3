@@ -28,7 +28,6 @@ public class Grafo<T> {
         }
         
         origen.agregarAdyacente(destino);
-        
     
         if (!dirigido) {
             destino.agregarAdyacente(origen);
@@ -105,8 +104,7 @@ public class Grafo<T> {
         for (int i = 0; i < n; i++) {
             indiceNodo.put(nodos.get(i), i);
         }
-        
-    
+
         for (int i = 0; i < n; i++) {
             Nodo<T> nodoActual = nodos.get(i);
             for (Nodo<T> adyacente : nodoActual.getAdyacentes()) {
@@ -114,7 +112,7 @@ public class Grafo<T> {
                 matriz[i][j] = 1;
             }
         }
-        
+
         return matriz;
     }
     
@@ -124,12 +122,12 @@ public class Grafo<T> {
         int n = nodos.size();
         
         System.out.println("\n--- Matriz de Adyacencia ---");
-        
-        
+
         System.out.print("     ");
         for (int i = 0; i < n; i++) {
             System.out.printf("%-15s", "N" + i);
         }
+
         System.out.println();
         
     
