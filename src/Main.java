@@ -5,7 +5,7 @@ public class Main {
         System.out.println("=== TRABAJO PRACTICO III - GRAFOS ===\n");
         
         
-        Persona p1 = new Persona("Blas", 82);
+        Persona p1 = new Persona("Blas", 62);
         Persona p2 = new Persona("Juan", 30);
         Persona p3 = new Persona("Tomas", 26);
         Persona p4 = new Persona("Facundo", 33);
@@ -19,7 +19,7 @@ public class Main {
         Nodo<Persona> nodo5 = new Nodo<>(p5);
         
         
-        System.out.println("--- Grafo NO DIRIGIDO ---");
+        System.out.println("----- Grafo NO DIRIGIDO -----");
         Grafo<Persona> grafo = new Grafo<>(false);
         
        
@@ -29,22 +29,22 @@ public class Main {
         grafo.agregarArista(nodo3, nodo5);
         grafo.agregarArista(nodo4, nodo5);
         
-        System.out.println("\n1. RECORRIDO DFS (Depth-First Search):");
+        System.out.println("\n1. Recorrido DFS(Depth-First Search):");
         List<Nodo<Persona>> dfs = grafo.recorrerDFS(nodo1);
         for (int i = 0; i < dfs.size(); i++) {
             System.out.println("   " + (i + 1) + ". " + dfs.get(i).getDato());
         }
         
-        System.out.println("\n2. RECORRIDO BFS (Breadth-First Search):");
+        System.out.println("\n2. Recorrido BFS (Breadth-First Search):");
         List<Nodo<Persona>> bfs = grafo.recorrerBFS(nodo1);
         for (int i = 0; i < bfs.size(); i++) {
             System.out.println("   " + (i + 1) + ". " + bfs.get(i).getDato());
         }
         
-        System.out.println("\n3. MATRIZ DE ADYACENCIA:");
+        System.out.println("\n3. Matriz de adyacencia :");
         grafo.imprimirMatrizAdyacencia();
       
-        System.out.println("\n\n--- Grafo DIRIGIDO ---");
+        System.out.println("\n\n----- Grafo DIRIGIDO -----");
         Grafo<Persona> grafoDirigido = new Grafo<>(true);
         
         
@@ -59,19 +59,19 @@ public class Main {
         grafoDirigido.agregarArista(nodo1D, nodo4D);
         grafoDirigido.agregarArista(nodo4D, nodo2D);
         
-        System.out.println("\n1. RECORRIDO DFS (desde nodo1):");
+        System.out.println("\n1. Recorrido DFS (desde nodo1):");
         List<Nodo<Persona>> dfsD = grafoDirigido.recorrerDFS(nodo1D);
         for (int i = 0; i < dfsD.size(); i++) {
             System.out.println("   " + (i + 1) + ". " + dfsD.get(i).getDato());
         }
         
-        System.out.println("\n2. RECORRIDO BFS (desde nodo1):");
+        System.out.println("\n2. Recorrido BFS (desde nodo1):");
         List<Nodo<Persona>> bfsD = grafoDirigido.recorrerBFS(nodo1D);
         for (int i = 0; i < bfsD.size(); i++) {
             System.out.println("   " + (i + 1) + ". " + bfsD.get(i).getDato());
         }
         
-        System.out.println("\n3. MATRIZ DE ADYACENCIA:");
+        System.out.println("\n3. Matriz de adyacencia:");
         grafoDirigido.imprimirMatrizAdyacencia();
       
     }

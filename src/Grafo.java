@@ -42,9 +42,8 @@ public class Grafo<T> {
         return dirigido;
     }
     
-    /**
-     * Recorrido DFS (Depth-First Search)
-     */
+     //RECORRIDO DFS (Depth-First Search)
+
     public List<Nodo<T>> recorrerDFS(Nodo<T> inicio) {
         List<Nodo<T>> resultado = new ArrayList<>();
         Set<Nodo<T>> visitados = new HashSet<>();
@@ -65,9 +64,8 @@ public class Grafo<T> {
         }
     }
     
-    /**
-     * Recorrido BFS (Breadth-First Search) 
-     */
+   //RECORRIDO BFS
+
     public List<Nodo<T>> recorrerBFS(Nodo<T> inicio) {
         List<Nodo<T>> resultado = new ArrayList<>();
         Set<Nodo<T>> visitados = new HashSet<>();

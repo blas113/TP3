@@ -1,7 +1,10 @@
 1. ¿Cómo hacer el grafo dirigido?
 
-    Pasar true al constructor: new Grafo<>(true).
+Para crear un grafo dirigido, se debe pasar el valor true al constructor al momento de instanciarlo.
+Ejemplo:
+Grafo<Persona> grafoDirigido = new Grafo<>(true);
 
 2. ¿Se puede recorrer igual?
 
-    Sí, DFS y BFS funcionan igual. La diferencia es que en un grafo dirigido solo se siguen las aristas en su dirección.
+Sí, los recorridos DFS (Depth-First Search) y BFS (Breadth-First Search) se aplican de la misma forma.
+La única diferencia es que, en un grafo dirigido, las aristas se recorren únicamente en la dirección en la que fueron definidas.
