@@ -1,3 +1,8 @@
+INTEGRANTES: Blas Pesce - Facundo Llano - Juan Carosio - Tomas Barea - Julian Isnardo
+
+
+PREGUNTAS:
+
 1. ¿Cómo hacer el grafo dirigido?
 
     Pasar true al constructor: new Grafo<>(true).
